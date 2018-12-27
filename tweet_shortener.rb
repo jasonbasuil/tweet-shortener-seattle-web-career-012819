@@ -17,13 +17,14 @@ end
   
 def word_substituter (tweet)
   #takes a string of a tweet as an argument and shortens that string based on the allowed substitutes
-  
+  tweet.split.collect do |word|
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase]
+    else
+      word
+    end
+  end.join(" ")
  
-  dictionary_keys = dictionary.keys 
-  
- 
-  dictionary_keys.each do |word|
-    if x 
   
 end 
 
