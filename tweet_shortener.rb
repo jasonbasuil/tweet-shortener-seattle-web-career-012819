@@ -44,6 +44,11 @@ def selective_tweet_shortener(tweet)
   end
 end 
 
-def shortened_tweet_truncator
+def shortened_tweet_truncator(tweet)
   #truncates the tweet to 140 characters with an ellipsis (...) if it's still too long after substitution 
+  if word_substituter(tweet).length > 140
+    word_substituter(tweet)[0..136] + '...'
+  else
+    tweet
+  end
 end 
