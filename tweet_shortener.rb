@@ -37,6 +37,7 @@ end
 
 def selective_tweet_shortener(tweet)
   #only does substitutions if the tweet is longer than 140 characters. If the tweet is 140 characters or shorter, just return the original tweet.
+  
    if tweet.length > 140
     word_substituter(tweet)
   else
@@ -46,6 +47,7 @@ end
 
 def shortened_tweet_truncator(tweet)
   #truncates the tweet to 140 characters with an ellipsis (...) if it's still too long after substitution 
+  
   if word_substituter(tweet).length > 140
     word_substituter(tweet)[0..136] + '...'
   else
