@@ -27,10 +27,11 @@ def word_substituter (tweet)
   end.join(" ")
 end 
 
-def bulk_tweet_shortener (array_of_tweets)
+def bulk_tweet_shortener (tweets)
   #takes in an array of tweets, iterates over them, shortens them, and puts out the results to the screen 
-  
-  #use word_substituter method 
+  tweets.each do |tweet|
+    puts word_substituter(tweet)
+  end
 end 
 
 def selective_tweet_shortener
