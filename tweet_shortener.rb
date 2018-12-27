@@ -18,8 +18,8 @@ end
 def word_substituter (tweet)
   #takes a string of a tweet as an argument and shortens that string based on the allowed substitutes
   
-  #convert the tweet into an array 
-  tweet = tweet.dup 
+  #grab the keys from the dictionary 
+  dictionary_keys = dictionary.keys 
   
   #convert tweet back into a string to return shortened tweet 
   
