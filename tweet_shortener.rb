@@ -19,7 +19,7 @@ def word_substituter (tweet)
   #takes a string of a tweet as an argument and shortens that string based on the allowed substitutes
   
   #convert the tweet into an array 
-  tweet.split(' ')
+  tweet = tweet.dup 
   
   #convert tweet back into a string to return shortened tweet 
   
