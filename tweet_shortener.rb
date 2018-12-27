@@ -22,7 +22,8 @@ def word_substituter (tweet)
   dictionary_keys = dictionary.keys 
   
   #iterate through dictionary_keys
-  dictionary_keys.each do |
+  dictionary_keys.each do |x|
+    if x 
   
   #convert tweet back into a string to return shortened tweet 
   
