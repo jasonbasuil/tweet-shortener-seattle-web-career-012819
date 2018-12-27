@@ -18,16 +18,13 @@ end
 def word_substituter (tweet)
   #takes a string of a tweet as an argument and shortens that string based on the allowed substitutes
   
-  #grab keys from the dictionary 
+ 
   dictionary_keys = dictionary.keys 
   
-  #iterate through dictionary_keys
+ 
   dictionary_keys.each do |word|
     if x 
   
-  #convert tweet back into a string to return shortened tweet 
-  
-  #hint: use the .keys method 
 end 
 
 def bulk_tweet_shortener (array_of_tweets)
